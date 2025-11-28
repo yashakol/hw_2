@@ -1,0 +1,16 @@
+def trim_and_repeat(string, offset=0, repetitions=1):
+    #string: исходная строка
+    #offset: число символов, на которое нужно обрезать строку слева (0 - взято из задания)
+    #repetitions: сколько раз нужно повторить строку перед возвратом (1 - взято из задания)
+   
+    # Обрезаем строку слева на offset символов
+    trimmed = string[offset:]
+    
+    # Повторяем обрезанную строку repetitions раз
+    result = trimmed * repetitions
+    
+    return result
+
+print(trim_and_repeat("Привет", 0, 1))
+print(trim_and_repeat("Привет", 1, 2))
+print(trim_and_repeat("Привет", 2, 4))
